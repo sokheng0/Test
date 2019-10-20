@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../jquery-3.4.1.min.js"></script>
+    <style>
+        div {
+            border-color: aqua;
+            width: 300px;
+            height: 200px;
+            background-color: blue;
+            border: 5px solid;
+        }
+    </style>
+    <script>
+        $(document).click(function () {
+            $("#bt1").click(function () {
+                $("div").slideUp(5000);
+            });
+            $("#bt2").click(function () {
+                $("div").slideDown(5000);
+            });
+            $("#bt2").click(function () {
+                $("div").slideToggle(5000);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button id="bt1">Hide</button>
+    <button id="bt2">Show</button>
+    <button id="bt3">Toggle</button>
+    <div></div>
+</body>
+
+</html>

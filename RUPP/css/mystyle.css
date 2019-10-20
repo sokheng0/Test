@@ -1,0 +1,9 @@
+h1:first-child{
+    color: red;
+}
+h1:nth-child(3){
+    color: blue;
+}
+h1:last-child{
+    color: aqua;
+}

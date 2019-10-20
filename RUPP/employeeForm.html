@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>Employee Form</h1>
+        ID <input type="text" id="id"><br>
+        Name <input type="text"  id="name"> <br>
+        Gender <input type="radio" name="ch" id="ch1" value="Male">Male
+                <input type="radio" name="ch" id="ch2" value="Female">Female <br>
+        Age <select  id="age">
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+        </select> <br>
+        <input type="button" value="Add" id="bt1" onclick="myAdd()"/>
+            <div id="dis"></div>
+        <script>
+            var result="<table border=1>";
+            function myAdd(){
+        var i,n,g="",a,row="<tr>";
+        i=document.getElementById("id").value;
+        n=document.getElementById("name").value;
+        if(document.getElementById("ch1").checked) g="Male";
+        if(document.getElementById("ch2").checked) g="Female";
+        a=document.getElementById("age").value;
+        row+="<td>"+i;
+        row+="<td>"+n;
+        row+="<td>"+g;
+        row+="<td>"+a;
+        row+="<tr>";
+        result+=row;
+        document.getElementById("dis").innerHTML=result;
+    }
+        </script>
+    </body>
+</html>

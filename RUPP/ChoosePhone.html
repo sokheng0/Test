@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Choose Phone</title>
+        <script>
+        function choosePhone(){
+            var t,v,u,d,item;
+            t=document.f.type.value;
+            v=document.f.val.value;
+            u=document.f.unit.value;
+            d=document.f.dis.value;
+            item = t + v + "" + d;
+            document.f.get.value=item;
+        }
+        </script>
+    </head>
+    <body align="center">
+        <h1>Choose Phone</h1>
+        <form action="f">
+            <table align="center">
+                <tr>
+                    <td><label for="">Type</label></td>
+                    <td><input type="radio" name="type" value="A">Andriod
+                        <input type="radio" name="type" value="I">IOS
+                        <input type="radio" name="type" value="W">Window
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Qty</label></td>
+                    <td><select name="val">
+                        <option name="val" value="1">1</option>
+                        <option name="val" value="2">2</option>
+                        <option name="val" value="3">3</option>
+                        <option name="val" value="4">4</option>
+                        <option name="val" value="5">5</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="">UnitPrice</label></td>
+                    <td><input type="text" name="unit"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Discount</label></td>
+                    <td><input type="radio" name="dis"value="5">5%
+                        <input type="radio" name="dis" value="10">10%
+                        <input type="radio" name="dis" value="15">15%
+                    </td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="choosePhone()">Order</button></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><textarea name="get"  cols="30" rows="10"></textarea></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

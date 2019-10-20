@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Form</h1>
+        <form action="">
+            <label for="username">username</label>
+                <input type="text" name="username" placeholder="username" autofocus maxlength="5" >
+            <label for="Password">Password</label>
+                <input type="password" name="Password" placeholder="password" required><br>
+            <label for="search">Search</label>
+                <input type="search" name="search" placeholder="search">    
+            <label for="email">Email</label>
+                <input type="email" name="email" placeholder="email@gmail.com">   <br> 
+            <label for="">Skill</label><br>
+                <input type="checkbox" name="html" value="html" checked>Html    
+                <input type="checkbox" name="css" value="css" >Css
+                <input type="checkbox" name="bootstrap" value="bootstrap">Bootstrap <br>
+            <label for="gender">Gender</label><br>
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female" checked>Female <br>
+                <input type="button" name="information" value="information" > <!--The same as button--> 
+                <input type="submit" name="submit" Value="submit">
+                <input type="reset"  name="reset" value="Reset">
+                    <button type="button" name="information">information</button> <!--New version-->
+                    <button type="submit" name="submit">Submit</button>
+                    <button type="reset" name="reset">Reset</button><br>
+            <label for="">Product</label>
+                <select name=""size=3>
+                    <option value="">-choice-</option>
+                    <option value="moto">moto</option>
+                    <option value="bycicle" selected>bycicle</option>
+                    <option value="car">car</option>
+                </select><br>
+            <label for="description">Description</label>     
+                <textarea name="description" id="" cols="30" rows="10" placeholder="You can read only" required></textarea>           
+                <fieldset>
+                    <legend>Login</legend>
+                    <label for="username">username</label>
+                    <input type="text" name="username" placeholder="username" autofocus maxlength="5" >
+                <label for="Password">Password</label>
+                    <input type="password" name="Password" placeholder="password" required><br>
+                </fieldset>
+            </form>
+
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Input javascript</title>
+        <meta charset="utf-8">
+        <script>
+        function myTest(){
+            var id,name,gender,hour,description;
+            id=document.f.id.value;
+
+        }
+        </script>
+    </head>
+    <body>
+        <h1 align="center">Employee Form</h1>
+        <form action="">
+            <table align="center">
+                <tr>
+                    <td><label for="id">ID</label></td>
+                    <td><input type="text" name="id" onfocus="" required></td>
+                </tr>
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td><input type="text" name="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender</label></td>
+                    <td><input type="radio" name="gender" value="Male" name="gender" checked>Male
+                    <input type="radio" name="gender" value="Female">Female</td>
+                </tr>
+                <tr>
+                    <td><label for="hour">Hour</label></td>
+                    <td><input type="text" name="hour"></td>
+                </tr>
+                <tr>
+                    <td><label for="rate">Rate</label></td>
+                    <td>
+                        <select name="rate" >
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button type="button" value="add" onclick="myTest()">Add</button></td>
+                    <td><button type="reset">Clear</button></td>
+                </tr>
+                <tr>
+                    <td><label for="description">Descriptionn</label></td>
+                    <td><textarea name="description" cols="30" rows="10"></textarea></td>
+                </tr>
+                </table>
+        </form>
+    </body>
+</html>

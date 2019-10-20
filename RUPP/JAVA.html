@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div{
+                width: 300px;
+                height: 300px;
+                border: 10px groove red;
+                background: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            var a,b,c,result="<div>",x1,x2,data;
+            a=parseFloat(prompt("Enter A","2"));
+            b=parseFloat(prompt("Enter B","-3"));
+            c=parseFloat(prompt("Enter c","1"));
+            result+=a+"x<sup>2</sup>";
+            result+=(b>0 ? "+"+b+"x":b+"x");
+            result+=(c>0 ? "+"+c:c);
+            result+="=0<br/>";
+            data=(b*b)-(4*a*c);
+            if(data>=0){
+                    x1=(-b+Math.sqrt(data))/(2*a);
+                    x2=(-b-Math.sqrt(data))/(2*a);
+            result+="x1="+x1+"</br>";
+            result+="x2="+x2+"</br>";
+             }
+             else{
+                 result+=<i>No Root</i></br>;
+             }
+            result+="</div>";
+            document.write(result);
+        </script>
+    </body>
+</html>
